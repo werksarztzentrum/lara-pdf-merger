@@ -6,7 +6,7 @@ use Exception;
 use FPDI;
 use FPDF;
 
-class PDFManage
+class PdfManage
 {
     private $_files;    //['form.pdf']  ["1,2,4, 5-19"]
     private $_fpdi;
