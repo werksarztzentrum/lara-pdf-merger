@@ -2,11 +2,13 @@
 
 namespace LynX39\LaraPdfMerger;
 
-use Exception;
-use FPDI;
-use FPDF;
 
-class PdfManage
+use TCPDI;
+
+require_once('tcpdf/tcpdf.php');
+require_once('tcpdf/tcpdi.php');
+
+class PDFManage
 {
     private $_files;    //['form.pdf']  ["1,2,4, 5-19"]
     private $_fpdi;
@@ -45,7 +47,7 @@ class PdfManage
             throw new Exception("No PDFs to merge.");
         }
 
-        $fpdi = new FPDI;
+        $fpdi = new TCPDI;
 
         // merger operations
         foreach ($this->_files as $file) {
@@ -156,4 +158,7 @@ class PdfManage
 
         return $newpages;
     }
+
+
+
 }

@@ -1,14 +1,18 @@
 # lara-pdf-merger
 
-Original written by http://pdfmerger.codeplex.com/team/view<br />
+Original written by http://pdfmerger.codeplex.com/team/view<br/>
 
-Require this package in your composer.json and update composer.
+###Update
 
-    "lynx39/lara-pdf-merger": "dev-master",
+Change parsers and use tcpdf, tcpdi and tcpdi_parser
   
 ## Installation
 
 ### Laravel 5.x:
+
+Require this package in your composer.json and update composer.
+
+    "lynx39/lara-pdf-merger": "dev-master",
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 
