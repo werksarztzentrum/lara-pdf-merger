@@ -13,8 +13,7 @@
         }
     ],
     "require": {
-        "php" : ">=5.4",
-        "setasign/fpdi-fpdf": "~1.6"
+        "php" : ">=5.4"
     },
     "homepage" : "https://github.com/LynX39/lara-pdf-merger",
     "autoload": {
