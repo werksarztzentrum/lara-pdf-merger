@@ -48,6 +48,8 @@ class PDFManage
         }
 
         $fpdi = new TCPDI;
+        $fpdi->setPrintHeader(false);
+        $fpdi->setPrintFooter(false);
 
         // merger operations
         foreach ($this->_files as $file) {
