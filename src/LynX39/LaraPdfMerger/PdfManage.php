@@ -2,7 +2,7 @@
 
 namespace LynX39\LaraPdfMerger;
 
-
+use Exception;
 use TCPDI;
 
 require_once('tcpdf/tcpdf.php');
