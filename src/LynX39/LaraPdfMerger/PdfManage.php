@@ -41,7 +41,7 @@ class PdfManage
      * @param $orientation
      * @return PDF
      */
-    public function merge($outputmode = 'browser', $outputpath = 'newfile.pdf', $orientation = 'P')
+    public function merge($outputmode = 'browser', $outputpath = 'newfile.pdf', $orientation = null)
     {
         if (!isset($this->_files) || !is_array($this->_files)) {
             throw new Exception("No PDFs to merge.");
@@ -65,6 +65,8 @@ class PdfManage
                     $template   = $fpdi->importPage($i);
                     $size       = $fpdi->getTemplateSize($template);
 
+                    if($orientation==null)$fileorientation=$size['w']< $size['h']?'P' : 'L';
+                    
                     $fpdi->AddPage($fileorientation, array($size['w'], $size['h']));
                     $fpdi->useTemplate($template);
                 }
@@ -75,6 +77,8 @@ class PdfManage
                     }
                     $size = $fpdi->getTemplateSize($template);
 
+                    if($orientation==null)$fileorientation=$size['w']< $size['h']?'P' : 'L';
+                    
                     $fpdi->AddPage($fileorientation, array($size['w'], $size['h']));
                     $fpdi->useTemplate($template);
                 }
