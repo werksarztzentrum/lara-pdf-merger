@@ -39,9 +39,10 @@ class PdfManage
      * @param $outputmode
      * @param $outputname
      * @param $orientation
+     * @array $meta [title => $title, author => $author, subject => $subject, keywords => $keywords, creator => $creator]
      * @return PDF
      */
-    public function merge($outputmode = 'browser', $outputpath = 'newfile.pdf', $orientation = null)
+    public function merge($outputmode = 'browser', $outputpath = 'newfile.pdf', $orientation = null, $meta = [])
     {
         if (!isset($this->_files) || !is_array($this->_files)) {
             throw new Exception("No PDFs to merge.");
@@ -50,6 +51,11 @@ class PdfManage
         $fpdi = new TCPDI;
         $fpdi->setPrintHeader(false);
         $fpdi->setPrintFooter(false);
+        
+        // setting the meta tags
+        if (!empty($meta)) {
+            $this->setMeta($meta);
+        }
 
         // merger operations
         foreach ($this->_files as $file) {
@@ -164,7 +170,22 @@ class PdfManage
 
         return $newpages;
     }
-
-
+    
+    /**
+     * Set your meta data in merged pdf
+     * @param $fpdi
+     * @array $meta [title => $title, author => $author, subject => $subject, keywords => $keywords, creator => $creator]
+     * @return void
+     */  
+    protected function setMeta($fpdi, $meta)
+    {
+        foreach ($meta as $key => $arg) {
+            $metodName = 'set' . ucfirst($key);
+            if (method_exists($fpdi, $metodName)) {
+                $fpdi->$metodName($arg);
+            }
+        }
+        return $fpdi;
+    } 
 
 }
