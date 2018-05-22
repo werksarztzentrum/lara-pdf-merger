@@ -1,8 +1,10 @@
 # lara-pdf-merger
 
-Original written by http://pdfmerger.codeplex.com/team/view<br/>
+Drop-in replacement for the original package from [deltaaskii/lara-pdf-merger](https://github.com/deltaaskii/lara-pdf-merger) that works under PHP 7.2
 
-###Update
+Original written by http://pdfmerger.codeplex.com/team/view
+
+### Update
 
 Change parsers and use tcpdf, tcpdi and tcpdi_parser
   
@@ -12,7 +14,7 @@ Change parsers and use tcpdf, tcpdi and tcpdi_parser
 
 Require this package in your composer.json and update composer.
 
-    "lynx39/lara-pdf-merger": "1.0.*",
+    "daltcore/lara-pdf-merger": "^1.1.0",
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 
