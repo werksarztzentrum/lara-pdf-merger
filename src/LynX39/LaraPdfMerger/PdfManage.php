@@ -18,6 +18,7 @@ class PdfManage
      * @param $filepath
      * @param $pages
      * @return void
+     * @throws Exception
      */
     public function addPDF($filepath, $pages = 'all', $orientation = null)
     {
@@ -37,10 +38,11 @@ class PdfManage
     /**
      * Merges your provided PDFs and outputs to specified location.
      * @param $outputmode
-     * @param $outputname
+     * @param $outputpath
      * @param $orientation
      * @array $meta [title => $title, author => $author, subject => $subject, keywords => $keywords, creator => $creator]
      * @return PDF
+     * @throws Exception
      */
     public function merge($outputmode = 'browser', $outputpath = 'newfile.pdf', $orientation = null, $meta = [])
     {
@@ -54,7 +56,7 @@ class PdfManage
         
         // setting the meta tags
         if (!empty($meta)) {
-            $this->setMeta($meta);
+            $this->setMeta($fpdi, $meta);
         }
 
         // merger operations
