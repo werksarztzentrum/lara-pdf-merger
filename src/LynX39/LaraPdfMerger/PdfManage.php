@@ -14,6 +14,8 @@ class PdfManage
     private $_fpdi;
 
     public function init(){
+        $this->_files = null;
+
         $this->_fpdi = new TCPDI;
         $this->_fpdi->setPrintHeader(false);
         $this->_fpdi->setPrintFooter(false);
