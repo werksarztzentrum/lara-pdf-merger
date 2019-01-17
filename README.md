@@ -2,7 +2,6 @@
 
 Drop-in replacement for the original package from [deltaaskii/lara-pdf-merger](https://github.com/deltaaskii/lara-pdf-merger) that works under *PHP 7.2*
 
-Forked from DALTCORE/lara-pdf-merger. This is an improved version of the lara-pdf-merger package that works under *PHP 7.2* and supports duplex merging.
 
 Original written by http://pdfmerger.codeplex.com/team/view
 
@@ -19,16 +18,8 @@ This Package was tested on **Laravel 5.7**
 
 * Require this package in your composer.json by adding those lines
 
-```javascript
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/MarwenSami/lara-pdf-merger"
-        }
-    ],
-    "require": {
-        "daltcore/lara-pdf-merger": "dev-master"
-    }
+```
+composer require daltcore/lara-pdf-merger
 ```
 
 * Run  this commend in your terminal
@@ -80,6 +71,7 @@ $pdfMerger->save("file_name.pdf", "download");
 ```
 
 ## Authors
+* [RamonSmit](https://github.com/RamonSmit)
 * [MarwenSami](https://github.com/MarwenSami)
 
 
