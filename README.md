@@ -5,7 +5,7 @@ Drop-in replacement for the original package from [deltaaskii/lara-pdf-merger](h
 
 Original written by http://pdfmerger.codeplex.com/team/view
 
-This Package was tested on **Laravel 5.7**
+This Package was tested on **Laravel 6.0**
 
 ### Improvements 
 
@@ -26,7 +26,7 @@ composer require daltcore/lara-pdf-merger
 ```bash
 composer update
 ```
-### Laravel 5.x:
+### Laravel <5.5:
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 ```php
