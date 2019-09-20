@@ -28,5 +28,15 @@
         "psr-0": {
             "LynX39\\LaraPdfMerger": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LynX39\\LaraPdfMerger\\PdfMergerServiceProvider"
+            ],
+            "aliases": {
+                "PdfMerger": "LynX39\\LaraPdfMerger\\Facades\\PdfMerger"
+            }
+        }
     }
 }
