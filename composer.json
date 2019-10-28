@@ -7,10 +7,6 @@
     ],
     "authors": [
         {
-            "name": "Michael Musso",
-            "email": "lynx@deltaaskii.com",
-            "homepage": "https://github.com/LynX39"
-        }, {
             "name": "Ramon Smit",
             "email": "rsmit@daltcore.com",
             "homepage": "https://github.com/daltcore"
@@ -23,7 +19,7 @@
     "require": {
         "php" : ">=5.4"
     },
-    "homepage" : "https://github.com/MarwenSami/lara-pdf-merger",
+    "homepage" : "https://github.com/daltcore/lara-pdf-merger",
     "autoload": {
         "psr-0": {
             "LynX39\\LaraPdfMerger": "src/"
