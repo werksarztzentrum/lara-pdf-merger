@@ -16,9 +16,15 @@
             "homepage": "https://github.com/MarwenSami"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/AaronDunphy/tcpdi"
+        }
+    ],
     "require": {
         "php" : ">=5.4",
-        "rafikhaceb/tcpdi": "^1.0"
+        "rafikhaceb/tcpdi": "dev-master"
     },
     "homepage" : "https://github.com/daltcore/lara-pdf-merger",
     "autoload": {
