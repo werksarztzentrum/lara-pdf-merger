@@ -17,7 +17,8 @@
         }
     ],
     "require": {
-        "php" : ">=5.4"
+        "php" : ">=5.4",
+        "wfeller/tcpdi": "1.2"
     },
     "homepage" : "https://github.com/daltcore/lara-pdf-merger",
     "autoload": {

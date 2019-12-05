@@ -1,6 +1,6 @@
 # lara-pdf-merger
 
-Drop-in replacement for the original package from [deltaaskii/lara-pdf-merger](https://github.com/deltaaskii/lara-pdf-merger) that works under *PHP 7.3*
+Drop-in replacement for the original package from [deltaaskii/lara-pdf-merger](https://github.com/deltaaskii/lara-pdf-merger) that also works under *PHP 7.4*
 
 
 Original written by http://pdfmerger.codeplex.com/team/view
