@@ -1,11 +1,11 @@
 # lara-pdf-merger
 
-Drop-in replacement for the original package from [deltaaskii/lara-pdf-merger](https://github.com/deltaaskii/lara-pdf-merger) that works under *PHP 7.2*
+Drop-in replacement for the original package from [deltaaskii/lara-pdf-merger](https://github.com/deltaaskii/lara-pdf-merger) that works under *PHP 7.4*
 
 
 Original written by http://pdfmerger.codeplex.com/team/view
 
-This Package was tested on **Laravel 6.0**
+This Package was tested on **Laravel 7.0**
 
 ### Improvements 
 
