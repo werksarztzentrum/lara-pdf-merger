@@ -21,7 +21,8 @@
         }
     ],
     "require": {
-        "php" : ">=5.4"
+        "php": "^7.2.5|^8.0",
+        "tecnickcom/tcpdf": "^6.4"
     },
     "homepage" : "https://github.com/MarwenSami/lara-pdf-merger",
     "autoload": {

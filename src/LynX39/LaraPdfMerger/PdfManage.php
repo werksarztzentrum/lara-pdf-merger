@@ -3,10 +3,8 @@
 namespace LynX39\LaraPdfMerger;
 
 use Exception;
-use TCPDI;
+use TCPDF;
 
-require_once('tcpdf/tcpdf.php');
-require_once('tcpdf/tcpdi.php');
 
 class PdfManage
 {
@@ -16,7 +14,7 @@ class PdfManage
     public function init(){
         $this->_files = null;
 
-        $this->_fpdi = new TCPDI;
+        $this->_fpdi = new TCPDF();
         $this->_fpdi->setPrintHeader(false);
         $this->_fpdi->setPrintFooter(false);
 
