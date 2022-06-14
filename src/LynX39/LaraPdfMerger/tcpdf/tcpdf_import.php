@@ -43,7 +43,7 @@
  */
 
 // include the TCPDF class
-require_once(dirname(__FILE__).'/tcpdf.php');
+require_once('vendor/tecnickcom/tcpdf/tcpdf.php');
 // include PDF parser class
 require_once(dirname(__FILE__).'/tcpdf_parser.php');
 
