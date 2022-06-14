@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ehsse/.idea/ehsse.iml" filepath="$PROJECT_DIR$/../ehsse/.idea/ehsse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lara-pdf-merger.iml" filepath="$PROJECT_DIR$/.idea/lara-pdf-merger.iml" />
+    </modules>
+  </component>
+</project>
