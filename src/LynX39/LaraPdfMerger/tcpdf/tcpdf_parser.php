@@ -41,7 +41,7 @@
  */
 
 // include class for decoding filters
-require_once('vendor/tecnickcom/tcpdf/include/tcpdf_filters.php');
+require_once(dirname(__DIR__) . '/tecnickcom/tcpdf/include/tcpdf_filters.php');
 
 /**
  * @class TCPDF_PARSER
